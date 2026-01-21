@@ -1,9 +1,49 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
     My Blog
 {% endblock %}
 
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}" />
+{% endblock %}
+
 {% block content %}
-    <h1>Welcome to my blog</h1>
-{% endblock%}
+    <header id="main-navigation">
+        <h1><a href="">Slavi's Blog</a></h1>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <header>
+            <img src="" alt="Slavi - the Author of this Blog" />
+            <h2>SLAVI's BLOG</h2>
+        </header>
+        <p>Hi, I am Slavi and I solving problems with the help of coding more than anything.</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest Thoughts</h2>
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountain" />
+                        <div class="post__content">
+                            <h3>Mountain</h3>
+                            <p>My favourite thing</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2> Programming</h2>
+        <p>Is not just a job or a hoby, but a way of life...</p>
+    </section>
+{% endblock %}

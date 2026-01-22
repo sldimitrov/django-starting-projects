@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+My Blog
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post.css" %}" />
+{% endblock %}
+
+{% block content %}
+<li>
+    <article class="post">
+        <a href="{% url "post-detail-page" "the-mountains" %}">
+            <img src="https://radiovelikotarnovo.com/radiovelikotarnovo.com/wp-content/uploads/2021/05/everest.jpg" alt="Mountain" />
+            <div class="post__content">
+                <h3>Mountain</h3>
+                <p>My favourite thing</p>
+            </div>
+        </a>
+    </article>
+</li>
+{% endblock %}

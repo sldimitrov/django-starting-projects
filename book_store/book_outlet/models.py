@@ -6,6 +6,7 @@ class Book(models.Model):
     author = models.CharField(max_length=50)
     rating = models.IntegerField(default=3)
     is_bestselling = models.BooleanField(default=False)
+    slug = models.SlugField(default="", null=True)
 
     def __str__(self):
         return f"{self.title} - {self.author} with rating of {self.rating}"

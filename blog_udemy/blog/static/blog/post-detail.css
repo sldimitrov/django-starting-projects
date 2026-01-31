@@ -21,7 +21,7 @@ body {
 
 #summary h2 {
     color: white;
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 #summary article {
@@ -49,6 +49,21 @@ body {
 
 #summary time {
     font-weight: bold;
+}
+
+#summary a {
+    color: white;
+    text-decoration: none;
+}
+
+#tag {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5px;
 }
 
 main {

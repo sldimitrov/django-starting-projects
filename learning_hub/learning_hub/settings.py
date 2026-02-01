@@ -29,12 +29,16 @@ ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "http://localhost:3000",
+    "http://127.0.0.1:5173",
 ]
+
+CORS_ALLOW_ALL_ORIGINS=True
 
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
+    'corsheaders',
     'courses',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,6 +49,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

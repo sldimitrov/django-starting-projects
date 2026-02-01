@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #1e1eaa;
+    height: 70px;
+}
+
+.header nav {
+    color: white;
+    display: flex;
+    gap: 1rem;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #b074ff;
+    height: 70px;
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
